@@ -35,11 +35,11 @@ int main()
         prefix[i] = prefix[i - 1] + a[i];
     }
 
-    for(int len = 2; len <= n; ++len)
+    for(int len = 2; len <= n; ++len) // 枚举区间长度
     {
-        for(int i = 1; i + len - 1 <= n; ++i)
+        for(int i = 1; i + len - 1 <= n; ++i) // 枚举左端点
         {
-            int j = i + len - 1;
+            int j = i + len - 1; // 右端点
             for(int k = i; k < j; ++k)
             {
                 dp[i][j] = std::min(dp[i][j], dp[i][k] + dp[k + 1][j] + sum(i, j));
