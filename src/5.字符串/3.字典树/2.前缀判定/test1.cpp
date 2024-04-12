@@ -53,12 +53,7 @@ int main()
         std::cin >> s;
         insert(s); // 将字符串挂载在树下
     }
-
-    for(int i = 0; i < n; ++i) {
-        std::cout << cnt[i] << ' ';
-    }
-    std::cout << std::endl;
-
+    
     for(int i = 1; i <= m; ++i) {
         char s[N];
         std::cin >> s;

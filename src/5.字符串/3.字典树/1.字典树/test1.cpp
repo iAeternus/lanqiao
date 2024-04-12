@@ -45,6 +45,7 @@ int main()
     insert("bca");
     insert("bc");
     std::cout << check("abc") << std::endl; // 2
+    std::cout << check("ab") << std::endl; // 0
     std::cout << check("bc") << std::endl; // 1
     std::cout << check("cb") << std::endl; // 0
     return 0;
