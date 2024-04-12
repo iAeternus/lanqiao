@@ -35,8 +35,8 @@ int n, m, cnt;  // n 个点，m 条边
 
 struct Edge {
     int to;           // 边终点
-    int weight;       // 边权
     int next;         // 同起点的上一条边的编号
+    int weight;       // 边权
 } edges[MAX_N << 1];  // 边集
 
 // head[i] 表示以 i 为起点的最后一条边在边集数组中的位置
