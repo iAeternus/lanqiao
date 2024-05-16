@@ -34,7 +34,7 @@ vll matrix_pow(vll base, ll power) {
 }
 
 ll fib_logn(ll n) {
-    vll A = {{1, 1}, {1, 0}};
+    vll A = {{1, 1}, {1, 0}}; 
     return matrix_pow(A, n)[1][0];
 }
 
